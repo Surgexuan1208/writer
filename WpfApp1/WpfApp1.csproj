@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="image\**" />
+    <EmbeddedResource Remove="image\**" />
+    <None Remove="image\**" />
+    <Page Remove="image\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="bold.png" />
+    <None Remove="clear.png" />
+    <None Remove="italic.png" />
+    <None Remove="new.png" />
+    <None Remove="open.png" />
+    <None Remove="save.png" />
+    <None Remove="underlined.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bold.png" />
+    <Resource Include="clear.png" />
+    <Resource Include="italic.png" />
+    <Resource Include="new.png" />
+    <Resource Include="open.png" />
+    <Resource Include="save.png" />
+    <Resource Include="underlined.png" />
+  </ItemGroup>
+
+</Project>
